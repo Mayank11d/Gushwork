@@ -71,22 +71,6 @@ project/
 
 ---
 
-## Getting Started
-
-### Local development
-
-```bash
-# 1. Clone or download the project files into a folder
-# 2. Open index.html in your browser — no install needed
-
-# Optional: use a simple dev server to avoid CORS issues with images
-npx serve .
-# or
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080` in your browser.
-
 ### Deployment
 
 The project is entirely static. Drop the three files onto any host:
