@@ -163,9 +163,7 @@ const processSteps = [
     imgEl.alt = img.alt;
     imgEl.loading = i === 0 ? "eager" : "lazy";
 
-    imgEl.addEventListener("mouseenter", () => openZoom(img.src, img.alt));
-    imgEl.addEventListener("mouseleave", () => closeZoom());
-
+    // Open fullscreen zoom only on click to avoid hover enter/leave flicker.
     imgEl.addEventListener("click", () => {
       if (zoomOverlay.classList.contains("active")) {
         closeZoom();
